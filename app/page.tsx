@@ -52,52 +52,53 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black font-sans relative overflow-visible z-0">
     {/* Hero Section */}
-<section className="relative overflow-visible bg-white py-24 px-4 sm:px-6 text-center z-10">
-  {/* Black star background */}
-  <div className="absolute inset-0 z-0 pointer-events-none">
-    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" className="w-full h-full">
-      <defs>
-        <mask id="star-mask">
-  <rect width="100%" height="100%" fill="black" />
-  <path
-    d="M50 -11 L63 27 L108 27 L72 60 L85 107 L50 79 L15 107 L28 60 L-8 27 L37 27 Z"
-    fill="none"
-    stroke="white"
-    strokeWidth="2"
-  />
-</mask>
-      </defs>
-      <rect width="100%" height="100%" fill="black" mask="url(#star-mask)" />
-    </svg>
-  </div>
+    <section className="relative overflow-visible bg-white py-24 px-4 sm:px-6 text-center z-10">
+      {/* Black star background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" className="w-full h-full">
+          <defs>
+            <mask id="star-mask">
+      <rect width="100%" height="100%" fill="black" />
+      <path
+        d="M50 -11 L63 27 L108 27 L72 60 L85 107 L50 79 L15 107 L28 60 L-8 27 L37 27 Z"
+        fill="none"
+        stroke="white"
+        strokeWidth="2"
+      />
+    </mask>
+          </defs>
+          <rect width="100%" height="100%" fill="black" mask="url(#star-mask)" />
+        </svg>
+      </div>
 
-  {/* Watermark */}
-  <div className="absolute inset-0 opacity-4 pointer-events-none z-10">
-    <Image
-      src="/nyame-dua.svg"
-      alt="Nyame Due - God's tree and presence"
-      layout="fill"
-      objectFit="contain"
-    />
-  </div>
+      {/* Watermark */}
+      <div className="absolute inset-0 opacity-4 pointer-events-none z-10">
+        <Image
+          src="/nyame-dua.svg"
+          alt="Nyame Due - God's tree and presence"
+          layout="fill"
+          objectFit="contain"
+          unoptimized
+        />
+      </div>
 
-  {/* Text Content */}
-  <div className="max-w-[1200px] mx-auto my-40 z-20 relative">
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold relative">
-      Magma Summit
-    </h1>
-    <h2 className="mt-4 text-2xl">1 - 3 September 2025<br />Accra, Ghana</h2>
-    <p className="mt-6 max-w-2xl mx-auto text-md">
-      The best founders and builders gathering to create what Africa needs next. 
-    </p>
-    <a
-      href={applicationLink}
-      className="z-20 mt-8 inline-block border border-red-600 rounded-md px-6 py-2 bg-red-600 text-white hover:text-black hover:bg-white transition"
-    >
-      Apply to Join
-    </a>
-  </div>
-</section>
+      {/* Text Content */}
+      <div className="max-w-[1200px] mx-auto my-40 z-20 relative">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold relative">
+          Magma Summit
+        </h1>
+        <h2 className="mt-4 text-2xl">1 - 3 September 2025<br />Accra, Ghana</h2>
+        <p className="mt-6 max-w-2xl mx-auto text-md">
+          The best founders and builders gathering to create what Africa needs next. 
+        </p>
+        <a
+          href={applicationLink}
+          className="z-20 mt-8 inline-block border border-red-600 rounded-md px-6 py-2 bg-red-600 text-white hover:text-black hover:bg-white transition"
+        >
+          Apply to Join
+        </a>
+      </div>
+    </section>
 
       {/* Three Pillars */}
       <section className="bg-white py-16 px-4 sm:px-6 text-center">
@@ -114,7 +115,7 @@ export default function Home() {
                 borderImage: "linear-gradient(to right, #facc15, #16a34a)",
                 borderImageSlice: 1,
               }}>
-              <Image src="/nserewa.png" alt="Nserewa - Cowries, Seedi, Wealth" width={32} height={32} className="absolute left-20 md:left-24 top-7" />
+              <Image src="/nserewa.png" alt="Nserewa - Cowries, Seedi, Wealth" width={32} height={32} className="absolute left-20 md:left-24 top-7" unoptimized />
               <h3 className="text-xl font-bold my-2 mb-6">Stablecoins</h3>
               <p>
                 Unlocking Africa's Financial Future. Below the surface of how USD and local currency stablecoins are spreading like wildfire across Africa.
@@ -125,7 +126,7 @@ export default function Home() {
                 borderImage: "linear-gradient(to right, #16a34a, #facc15)",
                 borderImageSlice: 1,
               }}>
-              <Image src="/nyansapo.png" alt="Nyansapo - Wisdom Knot" width={32} height={32} className="absolute left-18 md:left-20 top-7" />
+              <Image src="/nyansapo.png" alt="Nyansapo - Wisdom Knot" width={32} height={32} className="absolute left-18 md:left-20 top-7" unoptimized />
               <h3 className="text-xl font-bold my-2 mb-6">Crypto Natives</h3>
               <p>
                 From emerging worldviews to products that are moving us closer to new paradigm societies.
@@ -136,7 +137,7 @@ export default function Home() {
                 borderImage: "linear-gradient(to right, #facc15, #16a34a)",
                 borderImageSlice: 1,
               }}>
-              <Image src="/uac-nkanea.png" alt="UAC Nkanea - technological advancement" width={32} height={32} className="absolute left-12 md:left-15  top-7" />
+              <Image src="/uac-nkanea.png" alt="UAC Nkanea - technological advancement" width={32} height={32} className="absolute left-12 md:left-15 top-7" unoptimized />
               <h3 className="text-xl font-bold my-2 mb-6">Research Frontiers</h3>
               <p>
                 The big visions and deep research that go beyond solving immediate needs.
@@ -169,6 +170,7 @@ export default function Home() {
                 width={96}
                 height={96}
                 className="sm:mt-1"
+                unoptimized
               />
             </div>
           </div>
@@ -198,6 +200,7 @@ export default function Home() {
                 width={96}
                 height={96}
                 className="sm:mt-1"
+                unoptimized
               />
             </div>
           </div>
@@ -228,6 +231,7 @@ export default function Home() {
                 width={96}
                 height={96}
                 className="sm:mt-1"
+                unoptimized
               />
             </div>
           </div>
@@ -255,6 +259,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
             </a>
@@ -269,6 +274,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
             </a>
@@ -283,6 +289,7 @@ export default function Home() {
                   width={96}
                   height={96}
                   className="object-contain"
+                  unoptimized
                 />
               </div>
             </a>
