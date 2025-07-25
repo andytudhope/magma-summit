@@ -76,9 +76,13 @@ export default function Home() {
         <Image
           src="/nyame-dua.svg"
           alt="Nyame Due - God's tree and presence"
-          layout="fill"
-          objectFit="contain"
+          fill
           unoptimized
+          style={{
+            objectFit: "contain",
+            width: "100%",
+            height: "100%"
+          }}
         />
       </div>
 
