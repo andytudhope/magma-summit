@@ -26,7 +26,7 @@ const faqs = [
   {
     question: "Does it cost to participate?",
     answer:
-      "No direct cost. A refundable deposit will be requested after confirmation.",
+      "No direct cost. All participants are expected to cover their own travel and accommodation while in Accra.",
   },
   {
     question: "Where is the venue?",
@@ -304,7 +304,12 @@ export default function Home() {
       {/* FAQ Accordion */}
       <section className="bg-white py-16 px-4 sm:px-6" id="faq">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="font-headline text-3xl font-semibold mb-6 text-center">FAQ</h2>
+          <div className="relative text-center mb-10">
+            <h2 className="font-headline text-3xl font-semibold relative inline-block z-10 bg-white px-4">
+              FAQ            
+            </h2>
+            <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-red-500 to-transparent" />
+          </div>
           <div className="max-w-3xl mx-auto divide-y divide-gray-300">
             {faqs.map((faq, index) => (
               <div key={index}>
@@ -329,7 +334,6 @@ export default function Home() {
       {/* Apply */}
       <section className="bg-white py-16 px-4 sm:px-6 text-center" id="apply">
         <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-3xl font-semibold mb-6">Apply to Join</h2>
           <a
             href={applicationLink}
             className="z-0 mt-8 inline-block border border-red-600 rounded-md text-white px-6 py-2 bg-red-600 hover:text-black hover:bg-white transition"
