@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     siteName: "Magma Builder Summit",
     images: [
       {
-        url: "https://storage.tally.so/fb7b6bf2-a243-4776-85aa-0bede413802d/magma.webp",
-        width: 957,
-        height: 478,
+        url: "/share.jpeg",
+        width: 1600,
+        height: 900,
         alt: "Magma Builder Summit 2025",
       },
     ],
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     description: "Founders and builders gathering to create what Africa needs next.",
     site: "@borderlessaf", 
     creator: "@borderlessaf",
-    images: ["https://storage.tally.so/fb7b6bf2-a243-4776-85aa-0bede413802d/magma.webp"],
+    images: ["/twitter.jpeg"],
   },
   icons: {
     icon: "/favicon.ico", 
