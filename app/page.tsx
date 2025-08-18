@@ -247,36 +247,23 @@ export default function Home() {
         <div className="max-w-[1200px] mx-auto">
           <div className="relative text-center mb-10">
             <h2 className="font-headline text-3xl font-semibold relative inline-block z-10 bg-white px-4">
-              Partners & Supporters            
+              Partners & Supporters
             </h2>
             <div className="absolute left-0 right-0 top-1/2 h-px bg-gradient-to-r from-transparent via-red-500 to-transparent" />
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+
+          {/* Anchor Sponsors Row */}
+          <div className="grid grid-cols-2 gap-6 mb-10">
             <a
-              href="https://lavavc.io"
-              className="flex items-center justify-center md:aspect-square p-8 md:p-4 hover:bg-[radial-gradient(ellipse_at_30%_20%,#fef9c3_0%,#dcfce7_70%)]"
+              href="https://base.org"
+              className="flex items-center justify-center p-8 hover:bg-[radial-gradient(ellipse_at_30%_20%,#fef9c3_0%,#dcfce7_70%)]"
             >
-              <div className="w-24 h-12 flex items-center justify-center">
+              <div className="w-40 h-20 flex items-center justify-center">
                 <Image
-                  src="/lava.jpeg"
-                  alt="LAVA"
-                  width={96}
-                  height={96}
-                  className="object-contain"
-                  unoptimized
-                />
-              </div>
-            </a>
-            <a
-              href="https://meltwater.org/"
-              className="flex items-center justify-center md:aspect-square p-8 md:p-4 hover:bg-[radial-gradient(ellipse_at_30%_20%,#fef9c3_0%,#dcfce7_70%)]"
-            >
-              <div className="w-24 h-12 flex items-center justify-center">
-                <Image
-                  src="/mest.png"
-                  alt="Mest"
-                  width={96}
-                  height={96}
+                  src="/base.svg"
+                  alt="Base"
+                  width={160}
+                  height={80}
                   className="object-contain"
                   unoptimized
                 />
@@ -284,14 +271,63 @@ export default function Home() {
             </a>
             <a
               href="https://ens.domains"
-              className="flex items-center justify-center md:aspect-square p-8 md:p-4 hover:bg-[radial-gradient(ellipse_at_30%_20%,#fef9c3_0%,#dcfce7_70%)]"
+              className="flex items-center justify-center p-8 hover:bg-[radial-gradient(ellipse_at_30%_20%,#fef9c3_0%,#dcfce7_70%)]"
             >
-              <div className="w-24 h-12 flex items-center justify-center">
+              <div className="w-40 h-20 flex items-center justify-center">
                 <Image
                   src="/ens.svg"
                   alt="ENS DAO"
+                  width={160}
+                  height={80}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+            </a>
+          </div>
+
+          {/* Supporters Row */}
+          <div className="grid grid-cols-3 gap-6">
+            <a
+              href="https://minipay.org"
+              className="flex items-center justify-center p-6 hover:bg-gray-100"
+            >
+              <div className="w-24 h-12 flex items-center justify-center">
+                <Image
+                  src="/minipay.svg"
+                  alt="MiniPay"
                   width={96}
-                  height={96}
+                  height={48}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+            </a>
+            <a
+              href="https://meltwater.org/"
+              className="flex items-center justify-center p-6 hover:bg-gray-100"
+            >
+              <div className="w-24 h-12 flex items-center justify-center">
+                <Image
+                  src="/mest.png"
+                  alt="Mest"
+                  width={96}
+                  height={48}
+                  className="object-contain"
+                  unoptimized
+                />
+              </div>
+            </a>
+            <a
+              href="https://lavavc.io"
+              className="flex items-center justify-center p-6 hover:bg-gray-100"
+            >
+              <div className="w-24 h-12 flex items-center justify-center">
+                <Image
+                  src="/lava.jpeg"
+                  alt="LAVA"
+                  width={96}
+                  height={48}
                   className="object-contain"
                   unoptimized
                 />
