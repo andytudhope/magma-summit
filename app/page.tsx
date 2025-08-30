@@ -3,8 +3,6 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const applicationLink = "https://magma.borderless.africa/";
-
 const faqs = [
   {
     question: "Who qualifies to join?",
@@ -36,7 +34,7 @@ const faqs = [
     question: "Can I volunteer?",
     answer: (
       <>
-        Yes! Please fill this <a href={applicationLink} className="text-red-600 underline">brief form</a>.
+        Yes!
       </>
     ),
   },
@@ -95,12 +93,6 @@ export default function Home() {
         <p className="mt-6 max-w-2xl mx-auto text-md">
           The best founders and builders gathering to create what Africa needs next. 
         </p>
-        <a
-          href={applicationLink}
-          className="z-20 mt-8 inline-block border border-red-600 rounded-md px-6 py-2 bg-red-600 text-white hover:text-black hover:bg-white transition"
-        >
-          Apply to Join
-        </a>
       </div>
     </section>
 
@@ -364,18 +356,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Apply */}
-      <section className="bg-white py-16 px-4 sm:px-6 text-center" id="apply">
-        <div className="max-w-[1200px] mx-auto">
-          <a
-            href={applicationLink}
-            className="z-0 mt-8 inline-block border border-red-600 rounded-md text-white px-6 py-2 bg-red-600 hover:text-black hover:bg-white transition"
-          >
-            Apply Now
-          </a>
         </div>
       </section>
     </main>
